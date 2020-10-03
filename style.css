@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+#calculator {
+    width: 300px;
+    margin: 80px auto 0;
+    border: 20px solid #817e7e;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#calc-display {
+    background-color: black;
+    color: white;
+    padding: 16px 14px;
+    font-size: 36px;
+    text-align: right;
+}
+
+#calc-keys {
+    display: grid;
+    grid-template-areas: 
+    ". . . ."
+    "seven eight nine equal"
+    "four five six equal"
+    "one two three equal"
+    "zero decimal clear equal";
+}
+
+#one {
+    grid-area: one;
+    padding: 15px;
+}
+
+#two {
+    grid-area: two;
+    padding: 15px;
+}
+
+#three {
+    grid-area: three;
+    padding: 15px;
+}
+
+#four {
+    grid-area: four;
+    padding: 15px;
+}
+
+#five {
+    grid-area: five;
+    padding: 15px;
+}
+
+#six {
+    grid-area: six;
+    padding: 15px;
+}
+
+#seven {
+    grid-area: seven;
+    padding: 15px;
+}
+
+#eight {
+    grid-area: eight;
+    padding: 15px;
+}
+
+#nine {
+    grid-area: nine;
+    padding: 15px;
+}
+
+#zero {
+    grid-area: zero;
+    padding: 15px;
+}
+
+#decimal {
+    grid-area: decimal;
+    padding: 15px;
+}
+
+#clear {
+    grid-area: clear;
+    padding: 15px;
+}
+
+#equal {
+    grid-area: equal;
+    padding: 15px;
+    background-color: coral;
+}
+
+[data-type='operator'] {
+    padding: 15px;
+    background-color: darkgrey;
+}
+
+button {
+    outline: none;
+}
+
+[data-state='selected'] {
+    background-color: rgb(68, 68, 68) !important;
+}
