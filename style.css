@@ -24,7 +24,7 @@
     display: grid;
     grid-template-areas: 
     ". . . ."
-    "seven eight nine equal"
+    "seven eight nine percent"
     "four five six equal"
     "one two three equal"
     "zero decimal clear equal";
@@ -94,6 +94,12 @@
     grid-area: equal;
     padding: 15px;
     background-color: coral;
+}
+
+#percent {
+    grid-area: percent;
+    padding: 15px;
+    background-color: darkgray;
 }
 
 [data-type='operator'] {
