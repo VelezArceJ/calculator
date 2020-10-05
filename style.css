@@ -4,6 +4,10 @@
     font-size: 30px;
 }
 
+body {
+    background: linear-gradient(to right, #010101, #404052);   
+}
+
 #calculator {
     width: 300px;
     margin: 80px auto 0;
@@ -25,7 +29,7 @@
     grid-template-areas: 
     ". . . ."
     "seven eight nine percent"
-    "four five six equal"
+    "four five six neg"
     "one two three equal"
     "zero decimal clear equal";
 }
@@ -99,6 +103,11 @@
 #percent {
     grid-area: percent;
     padding: 15px;
+    background-color: darkgray;
+}
+
+#neg {
+    grid-area: neg;
     background-color: darkgray;
 }
 
